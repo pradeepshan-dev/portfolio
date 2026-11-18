@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pradeep S">
+    <meta name="description" content="Pradeep S - Python Full Stack Developer based in Coimbatore, Tamil Nadu. Explore my projects, skills, experience and portfolio.">
+    <meta name="theme-color" content="#080b16">
+
+    <meta property="og:title" content="Pradeep S | Python Full Stack Developer">
+    <meta property="og:description" content="Explore the portfolio and projects of Pradeep S, Python Full Stack Developer.">
+    <meta property="og:type" content="website">
+
+    <title>Pradeep S | Python Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome: Brand Icons + Regular Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+
+    <!-- Main JavaScript -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Background -->
+    <div class="background-effects" aria-hidden="true">
+        <div class="gradient-blob blob-one"></div>
+        <div class="gradient-blob blob-two"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo" aria-label="Pradeep S home">
+                <span class="logo-bracket">&lt;</span>PS<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                type="button"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light theme"
+                >
+                    <i data-lucide="sun"></i>
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability-badge">
+                        <span class="availability-dot"></span>
+                        Open to Opportunities
+                    </div>
+
+                    <p class="hero-greeting">Hello, I'm</p>
+
+                    <h1 class="hero-title">
+                        Pradeep <span class="gradient-text">S.</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        I'm a <span id="typingText">Python Developer</span><span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Entry-level Python Full Stack Developer passionate about
+                        building practical web applications, backend systems,
+                        REST APIs and AI-powered solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+
+                    <!-- HERO SOCIAL ICONS -->
+                    <div class="hero-socials">
+
+                        <a
+                            href="https://github.com/pradeepshan-dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            title="GitHub"
+                        >
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/pradeep-shanmugam-a803b2362"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="mailto:pradeepshanofficial@gmail.com"
+                            aria-label="Email"
+                            title="Email"
+                        >
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image-wrapper reveal">
+
+                    <div class="hero-image-glow"></div>
+
+                    <div class="hero-image-ring">
+
+                        <img
+                            src="Pradeep_image.jpeg"
+                            alt="Portrait of Pradeep S"
+                            class="hero-image"
+                            loading="eager"
+                            fetchpriority="high"
+                        >
+
+                        <div class="image-fallback" aria-hidden="true">PS</div>
+
+                    </div>
+
+                    <div class="floating-card floating-card-top">
+                        <i data-lucide="code-2"></i>
+                        <div>
+                            <strong>Python Developer</strong>
+                            <span>Backend Development</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <i data-lucide="layers"></i>
+                        <div>
+                            <strong>Full Stack</strong>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom" aria-hidden="true">
+                <span>SCROLL TO EXPLORE</span>
+                <i data-lucide="arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY MARQUEE -->
+        <section class="marquee-section" aria-label="Technologies">
+            <div class="marquee-track">
+
+                <div class="marquee-content">
+                    <span>PYTHON</span><span>✦</span>
+                    <span>DJANGO</span><span>✦</span>
+                    <span>REST API</span><span>✦</span>
+                    <span>MYSQL</span><span>✦</span>
+                    <span>JAVASCRIPT</span><span>✦</span>
+                    <span>REACT</span><span>✦</span>
+                    <span>GENERATIVE AI</span><span>✦</span>
+                </div>
+
+                <div class="marquee-content" aria-hidden="true">
+                    <span>PYTHON</span><span>✦</span>
+                    <span>DJANGO</span><span>✦</span>
+                    <span>REST API</span><span>✦</span>
+                    <span>MYSQL</span><span>✦</span>
+                    <span>JAVASCRIPT</span><span>✦</span>
+                    <span>REACT</span><span>✦</span>
+                    <span>GENERATIVE AI</span><span>✦</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">01 / ABOUT ME</span>
+                    <h2>Get to Know <span class="gradient-text">Me</span></h2>
+                    <p>A little introduction about my journey and interests.</p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-border">
+
+                            <img
+                                src="pradeepimg.jpeg"
+                                alt="Pradeep S"
+                                class="about-image"
+                                loading="lazy"
+                            >
+
+                            <div class="image-fallback" aria-hidden="true">PS</div>
+                        </div>
+
+                        <div class="about-image-decoration"></div>
+                    </div>
+
+                    <div class="about-content reveal">
+
+                        <h3>
+                            Building solutions through
+                            <span class="gradient-text">Code & Creativity</span>
+                        </h3>
+
+                        <p>
+                            I'm Pradeep S, an entry-level Python Full Stack Developer
+                            from Coimbatore, Tamil Nadu. I enjoy developing web
+                            applications and understanding how frontend interfaces,
+                            backend logic and databases work together.
+                        </p>
+
+                        <p>
+                            I have completed a six-month Full Stack Python with
+                            Generative AI internship at Ether Services and a
+                            four-month job-readiness program at Appin Technology.
+                        </p>
+
+                        <p>
+                            My current interests include Python, Django, REST API
+                            development, database management and integrating
+                            AI capabilities into practical applications.
+                        </p>
+
+                        <div class="about-details">
+                            <div>
+                                <span>Name</span>
+                                <strong>Pradeep S</strong>
+                            </div>
+
+                            <div>
+                                <span>Role</span>
+                                <strong>Python Full Stack Developer</strong>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <strong>Coimbatore, Tamil Nadu</strong>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <strong>pradeepshanofficial@gmail.com</strong>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Let's Connect
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="6">0</span></h3>
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="6">0</span></h3>
+                        <p>Months Internship</p>
+                    </div>
+
+                    <div class="stat-card reveal">
+                        <h3>8.0</h3>
+                        <p>CGPA</p>
+                    </div>
+
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="3">0</span></h3>
+                        <p>Certifications</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">02 / MY SKILLS</span>
+                    <h2>Technical <span class="gradient-text">Expertise</span></h2>
+                    <p>Technologies and tools I have learned and worked with.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="code"></i></div>
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>OOP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="monitor"></i></div>
+                        <h3>Frontend Development</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap 5</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="server"></i></div>
+                        <h3>Backend Development</h3>
+                        <div class="skill-tags">
+                            <span>Django</span>
+                            <span>Django ORM</span>
+                            <span>CRUD</span>
+                            <span>REST API</span>
+                            <span>DRF</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="database"></i></div>
+                        <h3>Database</h3>
+                        <div class="skill-tags">
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="plug"></i></div>
+                        <h3>API & Testing</h3>
+                        <div class="skill-tags">
+                            <span>REST API</span>
+                            <span>Postman</span>
+                            <span>JSON</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i data-lucide="wrench"></i></div>
+                        <h3>Tools & AI</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Gemini API</span>
+                            <span>LLM Integration</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">03 / EXPERIENCE</span>
+                    <h2>My Learning <span class="gradient-text">Journey</span></h2>
+                    <p>Professional training and practical learning experience.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card">
+                            <span class="timeline-date">6 MONTHS</span>
+                            <h3>Full Stack Python with Generative AI Intern</h3>
+                            <h4>Ether Services · Coimbatore</h4>
+                            <p>
+                                Completed a six-month internship focused on
+                                Full Stack Python development and Generative AI.
+                                Gained practical exposure to application
+                                development and AI integration.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card">
+                            <span class="timeline-date">4 MONTHS</span>
+                            <h3>Job-Readiness Program</h3>
+                            <h4>Appin Technology</h4>
+                            <p>
+                                Completed a four-month job-readiness program
+                                focused on technical learning and preparation
+                                for software development opportunities.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">04 / MY WORK</span>
+                    <h2>Featured <span class="gradient-text">Projects</span></h2>
+                    <p>Some applications and projects I have developed.</p>
+                </div>
+
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all" type="button">All</button>
+                    <button class="filter-btn" data-filter="fullstack" type="button">Full Stack</button>
+                    <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+                    <button class="filter-btn" data-filter="ai" type="button">AI</button>
+                    <button class="filter-btn" data-filter="backend" type="button">Backend</button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- DarkCoderz -->
+                    <article class="project-card reveal" data-category="fullstack backend">
+                        <div class="project-image">
+                            <img src="assets/darkcoderz.png" alt="DarkCoderz project screenshot" loading="lazy">
+                            <span class="project-category">FULL STACK</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>DarkCoderz</h3>
+                            <p class="project-subtitle">Python Coding Practice Platform</p>
+                            <p>
+                                A coding practice platform featuring DSA challenges,
+                                debugging exercises, output-based questions,
+                                points, daily streaks, leaderboard and progress tracking.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>Python</span><span>Django</span>
+                                <span>MySQL</span><span>JavaScript</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="darkcoderz" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Profile <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ColdMail AI -->
+                    <article class="project-card reveal" data-category="fullstack ai">
+                        <div class="project-image">
+                            <img src="assets/coldmailAI.png" alt="ColdMail AI project screenshot" loading="lazy">
+                            <span class="project-category">AI APPLICATION</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>ColdMail AI</h3>
+                            <p class="project-subtitle">AI-Powered Job Outreach Platform</p>
+                            <p>
+                                A platform that generates personalized cold emails
+                                using resume and job-description information,
+                                with multiple AI provider integrations and template backups.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>Python</span><span>Django</span>
+                                <span>MySQL</span><span>Gemini API</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="coldmail" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Profile <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Viduthalai -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-image">
+                            <img src="assets/viduthalai.png" alt="Viduthalai project screenshot" loading="lazy">
+                            <span class="project-category">FRONTEND</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Viduthalai</h3>
+                            <p class="project-subtitle">India's Freedom Struggle Web Archive</p>
+                            <p>
+                                A responsive multi-page website documenting
+                                12 freedom fighters and post-independence history,
+                                featuring a dark navy and gold visual theme.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>HTML</span><span>CSS</span>
+                                <span>Bootstrap 5</span><span>JavaScript</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="viduthalai" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Profile <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Crave Corner -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-image">
+                            <img src="assets/cravecorner.png" alt="Crave Corner project screenshot" loading="lazy">
+                            <span class="project-category">FRONTEND</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Crave Corner</h3>
+                            <p class="project-subtitle">Food Delivery Web Application</p>
+                            <p>
+                                A food delivery frontend featuring login,
+                                dynamic menus, cart, order history using localStorage,
+                                dark and light themes, and toast notifications.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>HTML</span><span>CSS</span>
+                                <span>JavaScript</span><span>Bootstrap 5</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="cravecorner" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Profile <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-image">
+                            <img src="assets/portfolio.png" alt="Developer portfolio screenshot" loading="lazy">
+                            <span class="project-category">FRONTEND</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Developer Portfolio</h3>
+                            <p class="project-subtitle">Personal Portfolio Website</p>
+                            <p>
+                                A responsive personal portfolio featuring
+                                dark and light themes, animations, project
+                                presentation and EmailJS contact integration.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>HTML</span><span>CSS</span>
+                                <span>JavaScript</span><span>EmailJS</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="portfolio" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Profile <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Bank Management System -->
+                    <article class="project-card reveal" data-category="backend">
+                        <div class="project-image">
+                            <img src="assets/bms.png" alt="Bank Management System project screenshot" loading="lazy">
+                            <span class="project-category">PYTHON</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Bank Management System</h3>
+                            <p class="project-subtitle">Console-Based Banking Application</p>
+                            <p>
+                                A Python banking simulator with account creation,
+                                searching, deposits, withdrawals, balance checking,
+                                account updates and money transfers.
+                            </p>
+
+                            <div class="skill-tags">
+                                <span>Python</span><span>OOP</span>
+                                <span>Exception Handling</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="project-details-btn" data-project="bank" type="button">
+                                    View Details <i data-lucide="arrow-up-right"></i>
+                                </button>
+
+                                <a class="project-github" href="https://github.com/pradeepshan-dev/pradeepshan-dev" target="_blank" rel="noopener noreferrer">
+                                    GitHub Repository <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">05 / EDUCATION</span>
+                    <h2>Education & <span class="gradient-text">Certifications</span></h2>
+                    <p>My academic background and completed certifications.</p>
+                </div>
+
+                <div class="education-grid">
+
+                    <div class="education-card reveal">
+                        <div class="education-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+
+                        <span class="timeline-date">NOV 2022 – MAY 2026</span>
+
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Electrical & Electronics Engineering</h4>
+
+                        <p>Nehru Institute of Engineering and Technology</p>
+                        <p>Anna University · Coimbatore</p>
+
+                        <div class="cgpa-badge">CGPA: 8.0</div>
+                    </div>
+
+                    <div class="certificates-card reveal">
+                        <div class="education-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+
+                        <h3>Certifications</h3>
+
+                        <div class="certificate-item">
+                            <i data-lucide="badge-check"></i>
+                            <div>
+                                <strong>Full Stack Python with Generative AI</strong>
+                                <span>Ether Services</span>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <i data-lucide="badge-check"></i>
+                            <div>
+                                <strong>AI for Everyone</strong>
+                                <span>Coursera</span>
+                            </div>
+                        </div>
+
+                        <div class="certificate-item">
+                            <i data-lucide="badge-check"></i>
+                            <div>
+                                <strong>Blue Prism Associate Developer</strong>
+                                <span>EduSkill</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">06 / CONTACT</span>
+                    <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                    <p>Have an opportunity or project in mind? Let's connect.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+
+                        <h3>Let's start a conversation.</h3>
+
+                        <p>
+                            I'm interested in entry-level Python Full Stack
+                            Developer opportunities, internships and
+                            meaningful software development projects.
+                        </p>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </span>
+
+                            <span>
+                                <small>Email</small>
+                                <strong>pradeepshanofficial@gmail.com</strong>
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </span>
+
+                            <span>
+                                <small>Location</small>
+                                <strong>Coimbatore, Tamil Nadu, India</strong>
+                            </span>
+                        </div>
+
+                        <!-- CONTACT SOCIAL ICONS -->
+                        <div class="contact-socials">
+
+                            <a
+                                href="https://github.com/pradeepshan-dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                title="GitHub"
+                            >
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/pradeep-shanmugam-a803b2362"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                title="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+
+                            <a
+                                href="mailto:pradeepshanofficial@gmail.com"
+                                aria-label="Email"
+                                title="Email"
+                            >
+                                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <form class="contact-form reveal" id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter subject"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Write your message..."
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal-overlay" id="projectModal" aria-hidden="true">
+
+        <div
+            class="project-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+            tabindex="-1"
+        >
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+                aria-label="Close project details"
+            >
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="modal-body">
+
+                <span class="project-category" id="modalCategory"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <h3>Technologies</h3>
+                <div class="skill-tags" id="modalTech"></div>
+
+                <h3 class="modal-features-heading">Key Features</h3>
+                <ul id="modalFeatures"></ul>
+
+                <a
+                    href="https://github.com/pradeepshan-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                    id="modalGithub"
+                >
+                    GitHub Profile
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+
+    <!-- BACK TO TOP -->
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>PS<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <p>Designed and developed by Pradeep S.</p>
+
+            <p class="copyright">
+                © <span id="currentYear"></span> Pradeep S. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
